@@ -6,9 +6,13 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
-
+  status:string = 'initializing';
   constructor(public navCtrl: NavController) {
 
+  }
+
+  onLogin(){
+    this.status = 'logged in';
   }
 
 }
